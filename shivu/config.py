@@ -9,7 +9,7 @@ class Config(object):
     mongo_url = "mongodb+srv://Siva:Siva@cluster0.9ojz8ds.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     PHOTO_URL = ["https://graph.org/file/cb65e2e8ea675f4b494af.jpg", "https://graph.org/file/1e64d77e0bec543c39f45.jpg"]
     SUPPORT_CHAT = "secure_chattt"
-    UPDATE_CHAT = "secure_update"
+    UPDATE_CHAT = "secure_updates"
     BOT_USERNAME = "secure_x_robot"
     CHARA_CHANNEL_ID = "-1002212512545"
     api_id = 19042248
