@@ -16,7 +16,7 @@ async def change_time(client: Client, message: Message):
         
 
     
-    if not user.id in ADMINS:
+    if not message.from_user.id == ADMINS:
         await message.reply_text('You are not a Bot owner.')
         return
 
