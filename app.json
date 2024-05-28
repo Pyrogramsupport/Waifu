@@ -14,16 +14,16 @@
    "addons": [
       {
          "options": {
-            "version": "16"
+            "version": "15"
          },
-         "plan": "heroku-postgresql"
+         "plan": "heroku-postgresql:mini"
       }
    ],
    "env": {
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather",
          "required": true,
-         "value": ""
+         "value": "7182024060:AAEV0GAAQUlw_E-UnNTOxd7K3A6dOpR6muM"
       },
       "api_id": {
          "description": "Get API_ID from my.telegram.org .",
@@ -48,7 +48,7 @@
       "sudo_users": {
          "description": "",
          "required": true,
-         "value": "" 
+         "value": "6679467894" 
       },
       "SUPPORT_CHAT": {
          "description": "your bots support chat name without @ or chat id.",
