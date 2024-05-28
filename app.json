@@ -43,7 +43,7 @@
       "mongo_url": {
          "description": "Your Mongo URL.. Don't know how to get Then Search on yt",
          "required": true,
-         "value": ""
+         "value": "mongodb+srv://PokemonMasters:sarvesh2369@cluster0.mcjqw8b.mongodb.net"
       },
       "sudo_users": {
          "description": "",
@@ -58,17 +58,17 @@
       "CHARA_CHANNEL_ID": {
          "description": "A channel id where bot can sends all your uploaded Characters",
          "required": true,
-         "value": "-123" 
+         "value": "-1002212512545" 
       },
       "OWNER_ID": {
          "description": "Id of bot owner",
          "required": true,
-         "value": "6765826972" 
+         "value": "6679467894" 
       },
      "GROUP_ID": {
          "description": "Your Support Group id",
          "required": true,
-         "value": "" 
+         "value": "-1002159833810" 
       }
    }     
       
