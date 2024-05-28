@@ -4,7 +4,7 @@ from shivu import user_totals_collection, shivuu
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-ADMINS = [ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER]
+ADMINS = [6679467894]
 
 
 @shivuu.on_message(filters.command("changetime"))
@@ -16,7 +16,7 @@ async def change_time(client: Client, message: Message):
         
 
     if member.status not in ADMINS :
-        await message.reply_text('You are not an Admin.')
+        await message.reply_text('You are not a Bot owner.')
         return
 
     try:
@@ -26,9 +26,7 @@ async def change_time(client: Client, message: Message):
             return
 
         new_frequency = int(args[1])
-        if new_frequency < 100:
-            await message.reply_text('The message frequency must be greater than or equal to 100.')
-            return
+        
 
     
         chat_frequency = await user_totals_collection.find_one_and_update(
