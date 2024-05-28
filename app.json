@@ -9,7 +9,7 @@
          "Waifu Catcher",
          "Catcher"
       ],   
-   "repository": "https://github.com/MyNameIsShekhar/WAIFU-HUSBANDO-CATCHER",
+   "repository": "https://github.com/Pyrogramsupport/Waifu",
    "stack": "heroku-22",
    "addons": [
       {
@@ -28,17 +28,17 @@
       "api_id": {
          "description": "Get API_ID from my.telegram.org .",
          "required": true,
-         "value": ""
+         "value": "19042248"
       },
       "api_hash": {
          "description": "Get API_HASH from my.telegram.org .",
          "required": true,
-         "value": ""
+         "value": "a1d443cb79941a89c493f22abf4f84cb"
       },
       "BOT_USERNAME": {
          "description": "Your Bot Username without @",
          "required": true,
-         "value": "Collect_Em_AllBot"
+         "value": "Secure_x_robot"
       },
       "mongo_url": {
          "description": "Your Mongo URL.. Don't know how to get Then Search on yt",
@@ -48,12 +48,12 @@
       "sudo_users": {
          "description": "",
          "required": true,
-         "value": "6765826972 6840530499" 
+         "value": "" 
       },
       "SUPPORT_CHAT": {
          "description": "your bots support chat name without @ or chat id.",
          "required": true,
-         "value": "Collect_Em_support" 
+         "value": "secure_chattt" 
       },
       "CHARA_CHANNEL_ID": {
          "description": "A channel id where bot can sends all your uploaded Characters",
