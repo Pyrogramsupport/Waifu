@@ -34,9 +34,13 @@ async def start(update: Update, context: CallbackContext) -> None:
         
         
         caption = f"""
+        
+◎ ─━──━─❖─━──━─ ◎
         ***Heyyyy...***
 
 ***I am An Anime themedCharacter secure Bot...​Add Me in Your group.. And I will send Random Characters After.. every 100 messages in Group... Use /guess to.. Collect that Characters in Your Collection.. and see Collection by using /Harem... So add in Your groups and Collect Your harem***
+
+◎ ─━──━─❖─━──━─ ◎
         """
         
         keyboard = [
