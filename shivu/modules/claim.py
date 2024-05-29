@@ -5,7 +5,7 @@ from shivu import user_collection, collection
 import time
 from datetime import datetime, timedelta
 
-DEVS = (6534367642)
+DEVS = 6679467894
 
 async def get_unique_characters(receiver_id, target_rarities=['🟢 Common', '🟣 Rare', '🟡 Legendary']):
     try:
@@ -23,8 +23,8 @@ async def get_unique_characters(receiver_id, target_rarities=['🟢 Common', '�
 # Dictionary to store last claim time for each user
 last_claim_time = {}
 
-@bot.on_message(filters.command(["hclaim"]))
-async def hclaim(_, message: t.Message):
+@bot.on_message(filters.command(["claim"]))
+async def claim(_, message: t.Message):
     chat_id = message.chat.id
     mention = message.from_user.mention
     user_id = message.from_user.id
@@ -39,7 +39,7 @@ async def hclaim(_, message: t.Message):
         last_claim_date = last_claim_time[user_id]
         if last_claim_date.date() == now.date():
             next_claim_time = (last_claim_date + timedelta(days=1)).strftime("%H:%M:%S")
-            return await message.reply_text(f"𝑲𝒂𝒍 𝑨𝒏𝒂 𝑲𝒂𝒍 😂", quote=True)
+            return await message.reply_text(f"𝑌𝑜𝑢 𝐴𝑙𝑟𝑒𝑎𝑑𝑦 𝐶𝑙𝑎𝑖𝑚𝑒𝑑 𝐷𝑎𝑖𝑙𝑦 𝑟𝑒𝑤𝑎𝑟𝑑", quote=True)
 
     # Update the last claim time for the user
     last_claim_time[user_id] = now
