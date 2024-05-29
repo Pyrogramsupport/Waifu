@@ -7,7 +7,7 @@ class Config(object):
     GROUP_ID = -1002159833810
     TOKEN = "7182024060:AAEV0GAAQUlw_E-UnNTOxd7K3A6dOpR6muM"
     mongo_url = "mongodb+srv://Siva:siva@secure.ffezokv.mongodb.net/?retryWrites=true&w=majority&appName=Secure"
-    PHOTO_URL = ["https://graph.org/file/cb65e2e8ea675f4b494af.jpg", "https://graph.org/file/1e64d77e0bec543c39f45.jpg"]
+    PHOTO_URL = ["https://telegra.ph/file/b89f8d3daed456c1c5ddf.jpg", "https://telegra.ph/file/18eb0aa99929796cf62bb.jpg"]
     SUPPORT_CHAT = "secure_chattt"
     UPDATE_CHAT = "secure_updates"
     BOT_USERNAME = "secure_x_robot"
