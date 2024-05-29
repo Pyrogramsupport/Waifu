@@ -5,11 +5,14 @@ import html
 from telegram import Update
 from telegram.ext import CommandHandler, CallbackContext
 
-from shivu import (application, PHOTO_URL, OWNER_ID,
+from shivu import (application, PHOTO_URL,
                     user_collection, top_global_groups_collection, top_global_groups_collection, 
                     group_user_totals_collection)
 
 from shivu import sudo_users as SUDO_USERS 
+
+
+ADMIN_ID = 6679467894
 
     
 async def global_leaderboard(update: Update, context: CallbackContext) -> None:
@@ -92,7 +95,7 @@ async def leaderboard(update: Update, context: CallbackContext) -> None:
 
 async def stats(update: Update, context: CallbackContext) -> None:
     
-    if update.effective_user.id != OWNER_ID:
+    if update.effective_user.id != ADMIN_ID:
         await update.message.reply_text("You are not authorized to use this command.")
         return
 
