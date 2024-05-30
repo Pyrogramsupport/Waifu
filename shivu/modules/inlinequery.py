@@ -81,7 +81,8 @@ async def inlinequery(update: Update, context: CallbackContext, cache_time=1) ->
                 id=f"{character['id']}_{time.time()}",
                 photo_url=character['img_url'],
                 caption=caption,
-                parse_mode='HTML'
+                parse_mode='HTML',
+                cache_time=2
             )
         )
 
