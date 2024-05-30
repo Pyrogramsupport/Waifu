@@ -83,9 +83,9 @@ async def inlinequery(update: Update, context: CallbackContext, cache_time=1) ->
                 caption=caption,
                 parse_mode='HTML'
                 
-            ), cache_time=2
+            )
         )
 
-    await update.inline_query.answer(results, next_offset=next_offset, cache_time=5)
+    await update.inline_query.answer(results, next_offset=next_offset, cache_time=2)
 
 application.add_handler(InlineQueryHandler(inlinequery, block=False))
