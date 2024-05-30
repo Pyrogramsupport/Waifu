@@ -1,7 +1,7 @@
 import random
 from html import escape 
 
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, ParseMode
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 
 from shivu import application, PHOTO_URL, SUPPORT_CHAT, UPDATE_CHAT, BOT_USERNAME, db, GROUP_ID
