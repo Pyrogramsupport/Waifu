@@ -24,7 +24,7 @@ db.user_collection.create_index([('characters.img_url', ASCENDING)])
 all_characters_cache = TTLCache(maxsize=10000, ttl=36000)
 user_collection_cache = TTLCache(maxsize=10000, ttl=60)
 
-async def inlinequery(update: Update, context: CallbackContext, cache_time=300) -> None:
+async def inlinequery(update: Update, context: CallbackContext, cache_time=1) -> None:
     query = update.inline_query.query
     offset = int(update.inline_query.offset) if update.inline_query.offset else 0
 
