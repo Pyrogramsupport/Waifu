@@ -17,7 +17,7 @@ from telegram.constants import ParseMode
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
-from telegram import Update
+from telegram import Update, ParseMode
 from telegram.ext import CommandHandler, CallbackContext, MessageHandler, filters
 
 from shivu import collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection, shivuu
@@ -248,7 +248,7 @@ def main() -> None:
     """Run bot."""
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            bot.sendMessage(f"@{SUPPORT_CHAT}","𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝙱𝚘𝚝 𝚁𝚎𝚜𝚝𝚊𝚛𝚝𝚎𝚍", parse_mode=ParseMode.MARKDOWN) 
+            application.bot.sendMessage(f"@{SUPPORT_CHAT}","𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝙱𝚘𝚝 𝚁𝚎𝚜𝚝𝚊𝚛𝚝𝚎𝚍", parse_mode=ParseMode.MARKDOWN) 
         except Forbidden:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
