@@ -255,8 +255,8 @@ def main() -> None:
     application.run_polling(drop_pending_updates=True)
     
 if __name__ == "__main__":
-    shivuu.start()
-    LOGGER.info("Bot started")
+    shivuu.run()
     with ExtBot() as bot:
         bot.send_message(chat_id=-1002206141461, text="Bot started")
+    LOGGER.info("bot started")
     main()
