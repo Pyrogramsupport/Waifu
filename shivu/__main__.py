@@ -3,8 +3,9 @@ import time
 import random
 import re
 import asyncio
-from html import escape 
+from html import escape
 
+from telegram.error import Unauthorized
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 from telegram import Update
