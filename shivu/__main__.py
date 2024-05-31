@@ -246,6 +246,16 @@ async def fav(update: Update, context: CallbackContext) -> None:
 
 
 def main() -> None:
+        if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
+        try:
+            dispatcher.bot.send_message(f"@{SUPPORT_CHAT}","SHU KURANAI IS ONLINE ", parse_mode=ParseMode.MARKDOWN) 
+        except Forbidden:
+            LOGGER.warning(
+                "Bot isnt able to send message to support_chat, go and check!",
+            )
+        except BadRequest as e:
+            LOGGER.warning(e.message)
+            
 
     
     application.add_handler(CommandHandler(["guess", "protecc", "collect", "grab", "hunt"], guess, block=False))
@@ -255,8 +265,6 @@ def main() -> None:
     application.run_polling(drop_pending_updates=True)
     
 if __name__ == "__main__":
-    shivuu.run()
-    with shivuu as bot:
-        bot.send_message(chat_id=-1002206141461, text="Bot started")
+    shivuu.start()
     LOGGER.info("bot started")
     main()
