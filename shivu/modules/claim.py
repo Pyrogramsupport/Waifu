@@ -5,7 +5,7 @@ from shivu import user_collection, collection
 import time
 from datetime import datetime, timedelta
 
-DEVS = (6679467894)
+DEVS = (7350197183)
 
 async def get_unique_characters(receiver_id, target_rarities=['⚪ 𝙲𝚘𝚖𝚖𝚘𝚗', '🟣 𝚁𝚊𝚛𝚎', '🟢 𝙼𝚎𝚍𝚒𝚞𝚖', '🟡 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢']):
     try:
