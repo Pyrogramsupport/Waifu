@@ -256,7 +256,7 @@ def main() -> None:
     
 if __name__ == "__main__":
     shivuu.start()
-    async with shivuu:
+    with shivuu:
         if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
             try:
                 application.shivuu.sendMessage(f"@{SUPPORT_CHAT}","𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝙱𝚘𝚝 𝚁𝚎𝚜𝚝𝚊𝚛𝚝𝚎𝚍", parse_mode=ParseMode.MARKDOWN) 
