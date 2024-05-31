@@ -4,6 +4,7 @@ import random
 import re
 import asyncio
 from html import escape
+import asyncio
 
 from telegram.error import (
     BadRequest,
@@ -244,21 +245,9 @@ async def fav(update: Update, context: CallbackContext) -> None:
 
 
 
-def main() -> None:
-    """Run bot."""
-    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
-        try:
-            application.bot.sendMessage(f"@{SUPPORT_CHAT}","𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝙱𝚘𝚝 𝚁𝚎𝚜𝚝𝚊𝚛𝚝𝚎𝚍", parse_mode=ParseMode.MARKDOWN) 
-        except Forbidden:
-            LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!",
-            )
-        except BadRequest as e:
-            LOGGER.warning(e.message)
+ def main() -> None:
 
     
-    
-
     application.add_handler(CommandHandler(["guess", "protecc", "collect", "grab", "hunt"], guess, block=False))
     application.add_handler(CommandHandler("fav", fav, block=False))
     application.add_handler(MessageHandler(filters.ALL, message_counter, block=False))
@@ -269,4 +258,7 @@ if __name__ == "__main__":
     shivuu.start()
     LOGGER.info("Bot started")
     main()
+    with ExtBot() as bot:
+        bot.send_message(chat_id=-1002206141461, message_text="Bot started")
+    
 
