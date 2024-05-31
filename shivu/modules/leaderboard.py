@@ -12,7 +12,7 @@ from shivu import (application, PHOTO_URL,
 from shivu import sudo_users as SUDO_USERS 
 
 
-ADMIN_ID = 6679467894
+ADMIN_ID = 7350197183
 
     
 async def global_leaderboard(update: Update, context: CallbackContext) -> None:
