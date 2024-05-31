@@ -6,7 +6,7 @@ class Config(object):
     sudo_users = "7350197183"
     GROUP_ID = -1002159833810
     TOKEN = "7328682504:AAEIy7vJ3jfphSVgDE-tA8P7TxQ8NcIX0z8"
-    mongo_url = "mongodb+srv://Siva:siva@secure.ffezokv.mongodb.net/?retryWrites=true&w=majority&appName=Secure"
+    mongo_url = "mongodb+srv://Hanuman:Siva@bot.7afxmsg.mongodb.net/?retryWrites=true&w=majority&appName=Bot"
     PHOTO_URL = ["https://telegra.ph/file/b89f8d3daed456c1c5ddf.jpg", "https://telegra.ph/file/18eb0aa99929796cf62bb.jpg"]
     SUPPORT_CHAT = "animecatchersupport"
     UPDATE_CHAT = "animecatcherupdates"
