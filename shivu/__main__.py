@@ -248,7 +248,7 @@ async def fav(update: Update, context: CallbackContext) -> None:
 def main() -> None:
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_message(f"@{SUPPORT_CHAT}","SHU KURANAI IS ONLINE ", parse_mode=ParseMode.MARKDOWN) 
+            application.bot.send_message(f"@{SUPPORT_CHAT}","SHU KURANAI IS ONLINE ", parse_mode=ParseMode.MARKDOWN) 
         except Forbidden:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
