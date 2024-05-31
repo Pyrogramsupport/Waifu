@@ -266,7 +266,7 @@ def main() -> None:
     application.run_polling(drop_pending_updates=True)
     
 if __name__ == "__main__":
-    shivuu.run()
+    shivuu.start()
     LOGGER.info("Bot started")
     main()
 
