@@ -256,7 +256,7 @@ def main() -> None:
     
 if __name__ == "__main__":
     shivuu.run()
-    with ExtBot() as bot:
+    with shivuu as bot:
         bot.send_message(chat_id=-1002206141461, text="Bot started")
     LOGGER.info("bot started")
     main()
