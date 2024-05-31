@@ -260,12 +260,12 @@ if __name__ == "__main__":
         if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
             try:
                 application.shivuu.sendMessage(f"@{SUPPORT_CHAT}","𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝙱𝚘𝚝 𝚁𝚎𝚜𝚝𝚊𝚛𝚝𝚎𝚍", parse_mode=ParseMode.MARKDOWN) 
-        except Forbidden:
-            LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!",
-            )
-        except BadRequest as e:
-            LOGGER.warning(e.message)
+            except Forbidden:
+                LOGGER.warning(
+                    "Bot isnt able to send message to support_chat, go and check!",
+                )
+            except BadRequest as e:
+                LOGGER.warning(e.message)
 
     
         
