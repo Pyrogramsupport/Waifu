@@ -236,6 +236,17 @@ async def fav(update: Update, context: CallbackContext) -> None:
 
 def main() -> None:
     """Run bot."""
+    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
+        try:
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝙱𝚘𝚝 𝚁𝚎𝚜𝚝𝚊𝚛𝚝𝚎𝚍", parse_mode=ParseMode.MARKDOWN) 
+        except Unauthorized:
+            LOGGER.warning(
+                "Bot isnt able to send message to support_chat, go and check!",
+            )
+        except BadRequest as e:
+            LOGGER.warning(e.message)
+
+
 
     application.add_handler(CommandHandler(["guess", "protecc", "collect", "grab", "hunt"], guess, block=False))
     application.add_handler(CommandHandler("fav", fav, block=False))
