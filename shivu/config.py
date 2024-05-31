@@ -9,7 +9,7 @@ class Config(object):
     mongo_url = "mongodb+srv://Siva:siva@secure.ffezokv.mongodb.net/?retryWrites=true&w=majority&appName=Secure"
     PHOTO_URL = ["https://telegra.ph/file/b89f8d3daed456c1c5ddf.jpg", "https://telegra.ph/file/18eb0aa99929796cf62bb.jpg"]
     SUPPORT_CHAT = "animecatchersupport"
-    UPDATE_CHAT = "naimecatcherupdates"
+    UPDATE_CHAT = "animecatcherupdates"
     BOT_USERNAME = "animecatcher_x_robot"
     CHARA_CHANNEL_ID = "-1002156837160"
     api_id = 19042248
