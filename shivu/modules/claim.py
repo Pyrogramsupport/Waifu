@@ -47,6 +47,7 @@ async def hclaim(_, message: t.Message):
     receiver_id = message.from_user.id
     unique_characters = await get_unique_characters(receiver_id)
     try:
+        await message.reply_text("Getting your Claim")
         await user_collection.update_one({'id': receiver_id}, {'$push': {'characters': {'$each': unique_characters}}})
         img_urls = [character['img_url'] for character in unique_characters]
         captions = [
